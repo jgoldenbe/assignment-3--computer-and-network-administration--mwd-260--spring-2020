@@ -56,7 +56,7 @@ rm -r *.thumbs
 Write a command that will recursively remove empty folders from the current folder. (_`12` pts_)
 
 ```bash
-
+rmdir *
 ```
 
 ### Question 6
