@@ -42,7 +42,7 @@ Write a script that checks whether a program exists on your machine. This progra
 Write a command that will create an empty file with a `.txt` extension named after the current folder. (_`12` pts_)
 
 ```bash
-
+touch "${PWD##*/}".txt
 ```
 
 ### Question 4
@@ -70,7 +70,12 @@ Write a script that reports every file name in a folder as two items: the filena
 Write a script that requests the user answer `y` or `n` to a prompt, and only exits when either of the two responses is entered. The user’s response should be echoed to the screen _before_ the program exits. (_`28` pts_)
 
 ```bash
+#!/bin/bash
+echo "Is the sky blue? (yes, no)"
+read answer
+echo "You answered $answer"
 
+exit 0
 ```
 
 ## ❖・Due・❖
