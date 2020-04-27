@@ -63,6 +63,14 @@ find -type d -empty -delete
 Write a script that reports every file name in a folder as two items: the filename and its extension. Each item should appear on a new line. (_`12` pts_)
 
 ```bash
+#!/bin/bash
+
+for FILE in /dir/*
+do 
+    echo "The filename is $1" /n
+    echo "It's extension is $2"
+done 
+exit 0
 
 ```
 
